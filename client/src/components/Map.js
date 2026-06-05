@@ -18,7 +18,7 @@ L.Icon.Default.mergeOptions({
 
 export default function Map({ events, filters }) {
   useEffect(() => {
-    const map = L.map('map').setView([40.0076, -83.0309], 16); // Your campus coords
+    const map = L.map('map').setView([-17.7840, 31.0530], 16); // Your campus coords
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '© OpenStreetMap'
