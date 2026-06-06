@@ -7,9 +7,10 @@ const PORT = process.env.PORT || 3000;
 app.use(cors({
   origin:[
     "http://localhost:5173",
-    "https://campus-event-planner.onrender.com"
+    "http://localhost5174",
+    "https://campus-event-planner-client.onrender.com"
   ]
-}));
+}))
 app.use(express.json());
 
 // Test route for Week 5
