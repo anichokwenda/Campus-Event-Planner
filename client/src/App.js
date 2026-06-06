@@ -7,8 +7,8 @@ import "./App.css"
 function App() {
     const [events, setEvents] = useState([])
     const [filters, setFilters] = useState({
-        category: " ",
-        date: " "
+        category: "All",
+        date: "All"
     })
 
     useEffect(() =>{

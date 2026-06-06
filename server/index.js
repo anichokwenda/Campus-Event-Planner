@@ -13,18 +13,18 @@ app.get('/api/events', (req, res) => {
     { 
       id: 1, 
       title: "Career Fair", 
-      lat: -17.7814, 
-      lng: 31.0587, 
-      category: "career", 
-      event_date: "2026-06-10" 
+      lat: -17.781, 
+      lng: 31.058, 
+      category: "Career", 
+      date: "2026-06-10" 
     },
     { 
       id: 2, 
       title: "Club Meeting", 
-      lat: -17.7809, 
-      lng: 31.0516, 
-      category: "club", 
-      event_date: "2026-06-11" 
+      lat: -17.780, 
+      lng: 31.051, 
+      category: "Club", 
+      date: "2026-06-11" 
     }
   ]);
 });
