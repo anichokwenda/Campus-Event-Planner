@@ -13,7 +13,7 @@ function App() {
 
     useEffect(() =>{
         const API = import.meta.env.VITE_API_URL || ""
-        axios.get("${API}/api/events")
+        axios.get(`${API}/api/events`)
            .then(res => setEvents(res.data))
            .catch(err => console.error("Error fetching events:", err))
     }, [])
