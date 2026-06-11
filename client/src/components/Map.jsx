@@ -48,6 +48,9 @@ export default function Map({ events = [], filters = {} }) {
 
     // 3. Filter events - handles "All" and empty filters
     const filteredEvents = events.filter(event => {
+      const isApproved = !event.status || event.status === 'approved';
+      if (!isApproved) return false;
+
       const categoryMatch = filters.category === "All" || event.category === filters.category;
       
       const dateMatch =filters.date === "All" || event.date === filters.date;
@@ -85,6 +88,8 @@ export default function Map({ events = [], filters = {} }) {
     if (markersRef.current.length > 0) {
       const group = L.featureGroup(markersRef.current);
       map.fitBounds(group.getBounds().pad(0.2));
+    } else {
+      map.setView([-17.7840, 31.0530], 17);
     }
 
   }, [events, filters]); // Re-run when events or filters change

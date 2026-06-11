@@ -29,9 +29,11 @@ function Auth({ user, setUser }) {
     }
 
     if (user) {
-        return React.createElement('div', { className: 'auth-bar' },
-            React.createElement('span', null, `Logged in: ${user.name} ${user.role === 'admin' ? '(Admin)' : ''}`),
-            React.createElement('button', { onClick: handleLogout }, 'Logout')
+        return (
+            <div className="auth-bar">
+                <span>Logged in: {user.email || user.name || 'User'} {user.role === 'admin' ? '(Admin)' : ''}</span>
+                <button onClick={handleLogout}>Logout</button>
+            </div>
         )
     }
 

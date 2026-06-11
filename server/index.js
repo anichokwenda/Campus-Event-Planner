@@ -37,7 +37,7 @@ let events = [
       lat: -17.781,
       lng: 31.058,
       category: "Career",
-      date: "2026-06-10",
+      date: "2026-06-14",
       description: "Meet employers",
       status: "approved",
       submittedBy: "admin@test.com"
@@ -48,7 +48,7 @@ let events = [
       lat: -17.780,
       lng: 31.051,
       category: "Club",
-      date: "2026-06-11",
+      date: "2026-06-15",
       description: "Monthly club meetup",
       status: "approved",
       submittedBy: "admin@test.com"
